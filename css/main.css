@@ -1,6 +1,21 @@
 body{
     background-color: grey;
+    color: white;
+    
 }
+h1{
+    font-size: 3rem;
+}
+p{
+    font-size: 2rem;
+}
+
+
+
+
+
+
+
 /* .section{
     position: relative; 
     top: 100;
