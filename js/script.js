@@ -5,10 +5,13 @@ const $temp = $('#temp');
 const $name = $('#name');
 const $high = $('#high');
 const $low = $('#low');
-
+const $form = $('form');
+const $input = $(`input[type="text"]`)
 
 
 //ELEMENT REFERENCES
+$form.on('submit', handleGetData)
+
 
 //EVENT LISTENERS
 
@@ -27,4 +30,6 @@ function handleGetData(){
         console.log(error)
     })
 }
+
+handleGetData();
 
