@@ -1,14 +1,40 @@
 body{
     background-color: grey;
     color: white;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('https://www.tripsavvy.com/thmb/r_qEdp_bYVNHIk232IptcERyFKA=/960x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-584844924-59ce51d6685fbe001181539d.jpg');
+    background-size: cover;
 }
-h1{
-    font-size: 3rem;
+form{
+    text-align: center;
+    margin-left: 45px;
 }
-p{
-    font-size: 2rem;
+.search{
+    border: none;
+    border-radius: 2px;
+    padding: 10px;
 }
+.button{
+   padding:9px; 
+   
+}
+main{
+    border: 2px solid blue;
+    background-color: green;
+    border-radius: 20px;
+    margin-top: 10px;
+    padding: 2em;
+    width: 100%;
+    max-width: 500px;
+    /* Add google font later */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
 .apiText{
     color:black;
 }
