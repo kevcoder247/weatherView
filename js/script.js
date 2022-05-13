@@ -14,17 +14,17 @@ const $form = $('form');
 const $input = $(`input[type="text"]`)
 
 //ELEMENT REFERENCES
-$form.on('submit', handleGetData)
+$form.on('submit', GetData)
 
 //EVENT LISTENERS
 
 //FUNCTIONS
-
+//funtion takes api link and concatenates user input(city)
 function link(query){
     return encodeURI(`https://api.openweathermap.org/data/2.5/weather?q=${query}&units=imperial&APPID=${key}`);
 }
-function handleGetData(event){
-    
+function GetData(event){
+    //prevents browser from reloading
     event.preventDefault()
     const userInput = $input.val();
     
@@ -39,6 +39,8 @@ function handleGetData(event){
         console.log('something is wrong');
         console.log(error)
     })
+    //clears input after user sumbits city
+    $($input).val('');
 }
 
 
