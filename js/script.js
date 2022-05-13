@@ -31,10 +31,10 @@ function GetData(event){
     $.ajax(link(userInput)).then(function (data) {
         console.log('weather is ready')
         console.log(data)
-        $temp.text(data.main.temp);
-        $name.text(data.name);
-        $high.text(data.main.temp_max);
-        $low.text(data.main.temp_min);
+        $name.html(data.name);
+        $temp.text(`${data.main.temp}°`);
+        $high.text(`${data.main.temp_max}°`);
+        $low.text(`${data.main.temp_min}°`);
     }, function(error){
         console.log('something is wrong');
         console.log(error)

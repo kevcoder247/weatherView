@@ -13,10 +13,14 @@ h1{
     font-size: 2rem;
 }
 p{
-    font-size: 20px;
+    font-size: 1.5rem;
+
+}
+.apiText{
+    margin-top: -25px;
 }
 form{
-    text-align: center;
+    /* text-align: center; */
     margin-left: 45px;
 }
 .search{
@@ -29,6 +33,10 @@ form{
    padding:9px; 
    font-family: 'Macondo', cursive;
    font-weight: bold;
+   padding-left: 7px;
+}
+.button:hover{
+    background-color: rgba(29, 253, 245, 1);
 }
 main{
     /* border: 2px solid blue; */
